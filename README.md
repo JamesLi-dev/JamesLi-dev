@@ -38,6 +38,10 @@ Skills:  REACT / VUE / JS / HTML / CSS / NodeJS
 
 -------
 
+![GitHub metrics](https://metrics.lecoq.io/JamesLi-dev)  
+
+-------
+
 ## 这是我的开发统计
 
 <!--START_SECTION:waka-->
