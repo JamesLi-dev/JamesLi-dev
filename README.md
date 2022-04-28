@@ -12,12 +12,14 @@ it allows you to create nice and simple GitHub Readme files that you can copy/pa
 
 Skills:  REACT / VUE / JS / HTML / CSS / NodeJS
 
-- 🔭 I’m currently working on this page. 
+- 🔭 I’m currently working on this page.   <a href="https://github.com/JamesLi-dev"><img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='30'></a>
+  
 
 
-[<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='40'>](https://github.com/JamesLi-dev)  
+<!-- [](https://github.com/JamesLi-dev)   -->
 
 <div align="center">
+
   <!-- 访问人数 --><img align="center" src="https://badges.pufler.dev/visits/JamesLi-dev/JamesLi-dev" />
   <!-- 项目数 --><img align="center" src="https://badges.pufler.dev/repos/JamesLi-dev" />
   <!-- 更新时间 --><img align="center" src="https://badges.pufler.dev/updated/JamesLi-dev/JamesLi-dev" />
