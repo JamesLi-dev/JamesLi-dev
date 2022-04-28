@@ -20,6 +20,12 @@ TypeScript   1 min           ██▓░░░░░░░░░░░░░░
 JavaScript   0 secs          █░░░░░░░░░░░░░░░░░░░░░░░░   04.40 %
 ```
 
+```text
+From: 28 March 2022 - To: 27 April 2022
+
+VS Code   12 mins         █████████████████████████   100.00 %
+```
+
 <!--END_SECTION:waka-->
 
 -------
