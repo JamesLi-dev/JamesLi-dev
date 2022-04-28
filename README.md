@@ -1,8 +1,11 @@
 ![image](https://user-images.githubusercontent.com/26141443/165725889-9457cc81-c788-4d32-a27c-2e1906d3ccc9.png)
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=522FF7&lines=Welcome+to+my+GitHub+homepage)](https://git.io/typing-svg)
-
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=522FF7&lines=%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E6%88%91%E7%9A%84+github+%E4%B8%BB%E9%A1%B5)](https://git.io/typing-svg)
+<div align="center">
+  <image align="center" src="https://readme-typing-svg.herokuapp.com?color=522FF7&lines=Welcome+to+my+GitHub+homepage" />
+</div>
+<div align="center">
+  <image align="center" src="https://readme-typing-svg.herokuapp.com?color=522FF7&lines=%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E6%88%91%E7%9A%84+github+%E4%B8%BB%E9%A1%B5" />
+</div>
 
 I made this project just for fun, 
 it allows you to create nice and simple GitHub Readme files that you can copy/paste and use in your profile.
