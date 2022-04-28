@@ -11,7 +11,11 @@ I made this project just for fun,
 it allows you to create nice and simple GitHub Readme files that you can copy/paste and use in your profile.
 
 Skills:  REACT / VUE / JS / HTML / CSS / NodeJS
-
+<!-- ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
+![React.js](https://img.shields.io/badge/React-%2335495e.svg?style=for-the-badge&logo=reactjs&logoColor=%234FC08D)
+ -->
+ 
 - 🔭 I’m currently working on this page.   <a href="https://github.com/JamesLi-dev"><img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='30'></a>
   
 
