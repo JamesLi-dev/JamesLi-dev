@@ -26,5 +26,4 @@ RUN poetry install --no-dev --no-root --no-interaction --no-ansi
 
 # copy and run program
 ADD main.py /main.py
-CMD [ "poetry", "run", "python", "/moreMain.py" ]
-# CMD [ "poetry", "run", "python", "/main.py" ]
+CMD [ "poetry", "run", "python", "/main.py" ]
