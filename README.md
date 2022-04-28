@@ -1,5 +1,7 @@
 <h2 align="center">👋 Hello! I'm JamesLi-dev.</h2>
 
+[![Visits Badge](https://badges.pufler.dev/visits/puf17640/git-badges)](https://badges.pufler.dev)
+
 
 
 -------
