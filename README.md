@@ -1,4 +1,13 @@
-<h2 align="center">👋 Hello! I'm JamesLi-dev.</h2>
+### Hi there 👋, my name is JamesLi-dev
+#### Welcome to my GitHub homepage
+I made this project just for fun, it allows you to create nice and simple GitHub Readme files that you can copy/paste and use in your profile.
+
+Skills:  REACT / VUE / JS / HTML / CSS / NodeJS
+
+- 🔭 I’m currently working on this page. 
+
+
+[<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='40'>](https://github.com/JamesLi-dev)  
 
 <div align="center">
   <!-- 访问人数 --><img align="center" src="https://badges.pufler.dev/visits/JamesLi-dev/JamesLi-dev" />
