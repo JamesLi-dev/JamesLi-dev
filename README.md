@@ -12,7 +12,7 @@
 <!--START_SECTION:waka-->
 
 ```text
-From: 28 March 2022 - To: 27 April 2022
+以下是使用代码 『 语言 』 统计 从: 28 March 2022 - 到: 27 April 2022
 
 YAML         5 mins          ███████████▓░░░░░░░░░░░░░   46.87 %
 LESS         4 mins          █████████▓░░░░░░░░░░░░░░░   38.66 %
@@ -21,7 +21,7 @@ JavaScript   0 secs          █░░░░░░░░░░░░░░░░
 ```
 
 ```text
-From: 28 March 2022 - To: 27 April 2022
+以下是使用代码 『 编辑器 』 统计 从: 28 March 2022 - 到: 27 April 2022
 
 VS Code   12 mins         █████████████████████████   100.00 %
 ```
