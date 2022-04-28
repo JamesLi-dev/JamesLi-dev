@@ -167,7 +167,7 @@ def make_title(dawn: str, dusk: str, type: str, /) -> str:
     if not (dawn or dusk):
         logger.error('Cannot find start/end date')
         sys.exit(1)
-    api_dfm, msg_dfm = '%Y-%m-%dT%H:%M:%SZ', '%Y %B %d'
+    api_dfm, msg_dfm = '%Y-%m-%dT%H:%M:%SZ', '%Y-%m-%d'
     try:
         start_date = datetime.strptime(dawn, api_dfm).strftime(msg_dfm)
         end_date = datetime.strptime(dusk, api_dfm).strftime(msg_dfm)
@@ -327,7 +327,7 @@ def prep_projects_content(stats: dict | None, /) -> str:
     contents: str = ''
 
     # Check if any data exists
-    if not (lang_info := stats.get('editors')):
+    if not (lang_info := stats.get('projects')):
         logger.debug('The data seems to be empty, please wait for a day')
         contents += 'No activity tracked'
         return contents
