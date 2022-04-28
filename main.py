@@ -156,7 +156,7 @@ def strtobool(val: str) -> bool:
 
 ################### logic ###################
 
-def make_title(dawn: str, dusk: str, /) -> str:
+def make_title(dawn: str, dusk: str, type: str, /) -> str:
     """
     WakaReadme Title
     ----------------
@@ -175,7 +175,12 @@ def make_title(dawn: str, dusk: str, /) -> str:
         logger.error(err)
         sys.exit(1)
     logger.debug('Title was made')
-    return f'From: {start_date} - To: {end_date}'
+
+    if type == 'editors' : type_name = '『 编辑器 』'
+    if type == 'languages' : type_name = '『 语言 』'
+    if type == 'projects' : type_name = '『 项目 』'
+
+    return f'以下是使用代码 {type_name} 统计 从: {start_date} - 到: {end_date}'
 
 
 def make_graph(
@@ -219,7 +224,7 @@ def prep_content(stats: dict | None, /) -> str:
 
     # make title
     if wk_i.show_title:
-        contents += make_title(stats.get('start'), stats.get('end')) + '\n\n'
+        contents += make_title(stats.get('start'), stats.get('end'), 'languages') + '\n\n'
 
     # make byline
     if wk_i.show_total_time and (
@@ -274,7 +279,7 @@ def prep_editors_content(stats: dict | None, /) -> str:
 
     # make title
     if wk_i.show_title:
-        contents += make_title(stats.get('start'), stats.get('end')) + '\n\n'
+        contents += make_title(stats.get('start'), stats.get('end'), 'editors') + '\n\n'
 
     # make byline
     if wk_i.show_total_time and (
@@ -310,7 +315,7 @@ def prep_editors_content(stats: dict | None, /) -> str:
     logger.debug('Contents were made')
     return contents.rstrip('\n')
 
-
+# API获取wakatime 统计
 def fetch_stats() -> Any:
     """
     WakaReadme Fetch Stats
@@ -346,7 +351,7 @@ def fetch_stats() -> Any:
 
     return statistic.get('data')
 
-
+# 最后渲染的内容
 def churn(old_readme: str, /) -> str | None:
     """
     WakaReadme Churn
@@ -361,9 +366,10 @@ def churn(old_readme: str, /) -> str | None:
     except requests.RequestException as rq_exp:
         logger.critical(rq_exp)
         sys.exit(1)
+    # 是用的语言
     generated_content = prep_content(waka_stats)
     print('\n', generated_content, '\n', sep='')
-
+    # 使用的编辑器
     generated_editors_content = prep_editors_content(waka_stats)
     print('\n', generated_editors_content, '\n', sep='')
 
