@@ -15,21 +15,21 @@ it allows you to create nice and simple GitHub Readme files that you can copy/pa
 <!-- REACT / VUE / JS / HTML / CSS / NodeJS -->
 
 ## Skills: 
-
 <div align="left">
   <a title="HTML" href="https://www.w3.org/html/" target="_blank"> <img src="https://camo.githubusercontent.com/da7acacadecf91d6dc02efcd2be086bb6d78ddff19a1b7a0ab2755a6fda8b1e9/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f68746d6c352f68746d6c352d6f726967696e616c2e737667" alt="html5" width="40" height="40"/> </a> 
   <a title="JS" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://camo.githubusercontent.com/442c452cb73752bb1914ce03fce2017056d651a2099696b8594ddf5ccc74825e/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6a6176617363726970742f6a6176617363726970742d6f726967696e616c2e737667" alt="javascript" width="40" height="40"/> </a> 
   <a title="CSS" href="https://www.w3schools.com/css/" target="_blank"> <img src="https://camo.githubusercontent.com/2e496d4bfc6f753ddca87b521ce95c88219f77800212ffa6d4401ad368c82170/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f637373332f637373332d6f726967696e616c2e737667" alt="css3" width="40" height="40"/> </a> 
   <a title="React" href="https://reactjs.org/" target="_blank"> <img src="https://camo.githubusercontent.com/27d0b117da00485c56d69aef0fa310a3f8a07abecc8aa15fa38c8b78526c60ac/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f72656163742f72656163742d6f726967696e616c2e737667" alt="react" width="40" height="40"/> </a> 
-  <a title="VUE" href="https://vuejs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="40" height="40"/> 
-   <a title="uni-app" href="https://uniapp.dcloud.io/" target="_blank"> <img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-f184e7c3-1912-41b2-b81f-435d1b37c7b4/1ae87107-2943-4ba6-be2b-390ca27c6260.png" alt="vuejs" width="120" height="40"/> 
-  <a title="NodeJS" href="https://nodejs.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> 
-  <a title="MongoDB" href="https://www.mongodb.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> 
-  <a title="Mysql" href="https://www.mysql.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="50" height="40"/> </a> 
+  <a title="VUE" href="https://vuejs.org/" target="_blank"> <img src="https://cn.vuejs.org/images/logo.svg" alt="vuejs" width="40" height="40"/> 
+   <a title="uni-app" href="https://uniapp.dcloud.io/" target="_blank"> <img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-f184e7c3-1912-41b2-b81f-435d1b37c7b4/1ae87107-2943-4ba6-be2b-390ca27c6260.png" alt="vuejs" width="135" height="30"/> 
+  <a title="NodeJS" href="https://nodejs.org" target="_blank"> <img src="https://camo.githubusercontent.com/900baefb89e187c8b32cdbb3b440d1502fe8f30a1a335cc5dc5868af0142f8b1/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6e6f64656a732f6e6f64656a732d6f726967696e616c2e737667" alt="nodejs" width="40" height="40"/> </a> 
+  <a title="MongoDB" href="https://www.mongodb.com/" target="_blank"> <img src="https://camo.githubusercontent.com/9ebde7ca22ab3f3b4bf92d2743804ab9e581e413a16cdf3626c2092e69967d80/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6d6f6e676f64622f6d6f6e676f64622d6f726967696e616c2e737667" alt="mongodb" width="40" height="40"/> </a> 
+  <a title="Mysql" href="https://www.mysql.com/" target="_blank"> <img src="https://camo.githubusercontent.com/2582ec2237a3a1fbd34e9b57332b72be27a7facb32abe7c2335e5f86e5f457a8/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6d7973716c2f6d7973716c2d6f726967696e616c2e737667" alt="mysql" width="40" height="40"/> </a> 
   <a title="GIT" href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> 
-  <a title="Nginx" href="https://www.nginx.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" alt="nginx" width="40" height="40"/> </a> 
+  <a title="Nginx" href="https://www.nginx.com" target="_blank"> <img src="http://nginx.org/nginx.png" alt="nginx" width="95" height="30"/> </a> 
   <a title="ReactNative" href="https://reactnative.dev/" target="_blank"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a>  </a>
-  <a title="Webpack" href="https://webpack.js.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg" alt="webpack" width="70" height="60"/> </a>
+    <a title="Redis" href="https://redis.io/" target="_blank"> <img src="https://imgsa.baidu.com/forum/pic/item/7af40ad162d9f2d390ed4c4babec8a136227cc92.jpg" alt="reactnative" width="40" height="40"/> </a>  </a>
+  <a title="Webpack" href="https://webpack.js.org" target="_blank"> <img src="https://avatars.githubusercontent.com/u/2105791?s=200&v=4" alt="webpack" width="40" height="40"/> </a>
   <a title="Vite" href="https://vitejs.cn/" target="_blank"> <img src="https://vitejs.cn/logo.svg" alt="webpack" width="40" height="40"/> </a> </p>
 </div>  
 
