@@ -1,78 +1,126 @@
-name: "Waka - Readme"
+name: 'Profile Readme Development Stats'
 author: JamesLi-dev
-description: "Add a Wakatime Coding Activity graph in your Readme"
+description: 'Add a Wakatime Coding Activity graph in your Readme'
 
 inputs:
-      
-  GH_USERNAME:
-    description: 'Your GitHub username'
-    default: ${{ github.repository_owner }}
-    required: false
-    
   GH_TOKEN:
-    description: "GitHub access token with Repo scope"
-    default: ${{ github.token }}
+    description: 'GitHub access token with Repo scope'
     required: true
+    default: ${{ github.token }}
 
   WAKATIME_API_KEY:
-    description: "Your Wakatime/Wakapi/Hakatime API Key"
+    description: 'Your Wakatime API Key'
     required: true
-
-  API_BASE_URL:
-    description: "Alternative API base URL when using a third-party WakaTime-ish backend"
-    default: "https://wakatime.com/api"
-    required: false
-
-  REPOSITORY:
-    description: "Your GitHub repository"
-    default: ${{ github.repository }}
-    required: false
-
-  COMMIT_MESSAGE:
-    description: "Add a commit message of your choice"
-    default: "Updated the Graph with new Metrics"
-    required: false
-
-  # content tweaks
-
-  SHOW_TITLE:
-    description: "Displays the week number and days in Readme as title"
-    default: "false"
-    required: false
 
   BLOCKS:
     description: "Add the progress blocks of your choice"
     default: "░▒▓█"
     required: false
 
-  TIME_RANGE:
-    description: "Time range of the queried statistics"
-    # 'last_7_days', 'last_30_days', 'last_6_months', 'last_year', 'all_time'
-    default: "last_30_days" 
+  SHOW_OS:
     required: false
+    description: 'Show the list of OS Worked on In dev metrics'
+    default: "True"
 
-  SHOW_TIME:
-    description: "Displays the amount of time spent for each language"
-    default: "true"
+  SHOW_PROJECTS:
     required: false
+    description: 'Show the list of projects worked on in dev metrics'
+    default: "True"
 
-  SHOW_TOTAL:
-    description: "Displays total coding time"
-    default: "false"
+  SHOW_EDITORS:
     required: false
+    description: 'Show the Editors used in dev metrics'
+    default: "True"
 
-  # active
-  MAX_LINES:
-    description: "The maximum number of lines populated in your readme file"
-    default: 5
+  SHOW_TIMEZONE:
     required: false
+    description: 'Show the time zone in the dev metrics'
+    default: "True"
+
+  SHOW_COMMIT:
+    required: false
+    description: "Shows the number of commit graph in the dev metrics"
+    default: "True"
+
+  SHOW_LANGUAGE:
+    required: false
+    description: "Show the Coding language used in dev metrics"
+    default: "True"
+
+  SHOW_LINES_OF_CODE:
+    required: false
+    description: "Show the Total Lines of code written Badge till date"
+    default: "True"
+
+  SHOW_LANGUAGE_PER_REPO:
+    required: false
+    description: "Show language or framework used across different repository"
+    default: "True"
+
+  SHOW_LOC_CHART:
+    required: false
+    description: ""
+    default: "True"
+
+  SHOW_DAYS_OF_WEEK:
+    required: false
+    description: "show day of week you are most productive"
+    default: "True"
+
+  SHOW_PROFILE_VIEWS:
+    required: false
+    description: "Shows the current profile views"
+    default: "True"
+
+  SHOW_SHORT_INFO:
+    required: false
+    description: "Shows the short facts"
+    default: "True"
+
+  LOCALE:
+    required: false
+    description: "Show stats in your own language"
+    default: "en"
+
+  COMMIT_BY_ME:
+    required: false
+    description: "Git commit with your own name and email"
+    default: "True"
+
+  IGNORED_REPOS:
+    required: false
+    description: "Repos you don't want to be counted"
+    default: ""
+  
+  COMMIT_MESSAGE:
+    required: false
+    description: "Git commit message"
+    default: "Updated with Dev Metrics"
+  
+  SHOW_UPDATED_DATE:
+    required: false
+    description: "Show updated date"
+    default: "True"
+
+  UPDATED_DATE_FORMAT:
+    required: false
+    description: "Updated date format"
+    default: "%d/%m/%Y %H:%M:%S"
+
+  SHOW_TOTAL_CODE_TIME:
+    required: false
+    description: "Show Total Time you have coded"
+    default: "True"
+
+  SYMBOL_VERSION:
+    required: false
+    description: "Version of the symbol block and empty of the progress bar"
+    default: "1"
 
 runs:
-  using: "docker"
-  image: "Dockerfile"
-  # main: dist/index.js
+  using: 'docker'
+  image: 'Dockerfile'
 
 branding:
-  icon: "info"
-  color: "blue"
-
+  icon: 'activity'
+  color: 'orange'
