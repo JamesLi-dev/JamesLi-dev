@@ -122,5 +122,5 @@ runs:
   image: 'Dockerfile'
 
 branding:
-  icon: 'activity'
-  color: 'orange'
+  icon: 'info'
+  color: 'blue'
