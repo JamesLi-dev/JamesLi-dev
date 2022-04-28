@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/26141443/165725889-9457cc81-c788-4d32-a27c-2e1906d3ccc9.png)
+
 ### Hi there 👋, my name is JamesLi-dev
 #### Welcome to my GitHub homepage
 I made this project just for fun, it allows you to create nice and simple GitHub Readme files that you can copy/paste and use in your profile.
