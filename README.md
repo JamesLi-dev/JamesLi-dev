@@ -1,6 +1,7 @@
 <h2 align="center">👋 Hello! I'm JamesLi-dev.</h2>
 
-[![Visits Badge](https://badges.pufler.dev/visits/puf17640/git-badges)](https://badges.pufler.dev)
+<!-- 访问人数 -->
+[![Visits Badge](https://badges.pufler.dev/visits/JamesLi-dev/JamesLi-dev)](https://badges.pufler.dev)
 
 
 
