@@ -67,14 +67,11 @@ inputs:
     required: false
 
 runs:
-  using: "docker"
+  using: "docker" | "node12"
   image: "Dockerfile"
-  using: "node12"
   main: dist/index.js
 
 branding:
-  icon: "info"
-  color: "blue"
-  color: "yellow"
-  icon: "activity"
+  icon: "info" | "activity"
+  color: "blue" | "yellow"
 
