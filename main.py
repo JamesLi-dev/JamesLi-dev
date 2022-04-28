@@ -256,6 +256,61 @@ def prep_content(stats: dict | None, /) -> str:
     return contents.rstrip('\n')
 
 
+def prep_editors_content(stats: dict | None, /) -> str:
+    """
+    WakaReadme Prepare Markdown
+    ---------------------------
+
+    Prepared markdown content from the fetched statistics
+    ```
+    """
+    contents: str = ''
+
+    # Check if any data exists
+    if not (lang_info := stats.get('editors')):
+        logger.debug('The data seems to be empty, please wait for a day')
+        contents += 'No activity tracked'
+        return contents
+
+    # make title
+    if wk_i.show_title:
+        contents += make_title(stats.get('start'), stats.get('end')) + '\n\n'
+
+    # make byline
+    if wk_i.show_total_time and (
+        total_time := stats.get('human_readable_total')
+    ):
+        contents += f'Total Time: {total_time}\n\n'
+
+    # make content
+    logger.debug('Making contents')
+    pad_len = len(
+        max((str(l.get('name')) for l in lang_info), key=len)
+        # comment if it feels way computationally expensive
+        # and then don't for get to set pad_len to say 13 :)
+    )
+    for idx, lang in enumerate(lang_info):
+        lang_name: str = lang.get('name')
+        # >>> add editors to filter here <<<
+        # if lang_name in {...}: continue
+        lang_time: str = lang.get('text') if wk_i.show_time else ''
+        lang_ratio: float = lang.get('percent')
+        lang_bar: str = make_graph(
+            wk_i.block_style, lang_ratio, wk_c.graph_length,
+            lg_nm=lang_name
+        )
+        contents += (
+            f'{lang_name.ljust(pad_len)}   ' +
+            f'{lang_time: <16}{lang_bar}   ' +
+            f'{lang_ratio:.2f}'.zfill(5) + ' %\n'
+        )
+        if idx >= 5 or lang_name == 'Other':
+            break
+
+    logger.debug('Contents were made')
+    return contents.rstrip('\n')
+
+
 def fetch_stats() -> Any:
     """
     WakaReadme Fetch Stats
@@ -308,9 +363,13 @@ def churn(old_readme: str, /) -> str | None:
         sys.exit(1)
     generated_content = prep_content(waka_stats)
     print('\n', generated_content, '\n', sep='')
+
+    generated_editors_content = prep_editors_content(waka_stats)
+    print('\n', generated_editors_content, '\n', sep='')
+
     new_readme = re.sub(
         pattern=wk_c.waka_block_pattern,
-        repl=f'{wk_c.start_comment}\n\n```text\n{generated_content}\n```\n\n{wk_c.end_comment}',
+        repl=f'{wk_c.start_comment}\n\n```text\n{generated_content}\n```\n\n```text\n{generated_editors_content}\n```\n\n{wk_c.end_comment}',
         string=old_readme
     )
     # return None  # un-comment when testing with --dev
