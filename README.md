@@ -4,9 +4,6 @@
 [![Visits Badge](https://badges.pufler.dev/visits/JamesLi-dev/JamesLi-dev)](https://badges.pufler.dev) <!-- 项目数 -->[![Repos Badge](https://badges.pufler.dev/repos/JamesLi-dev)](https://badges.pufler.dev) <!-- 更新时间 -->[![Updated Badge](https://badges.pufler.dev/updated/JamesLi-dev/JamesLi-dev)](https://badges.pufler.dev) <!-- 创建时间 -->[![Created Badge](https://badges.pufler.dev/created/JamesLi-dev/JamesLi-dev)](https://badges.pufler.dev) <!-- github年份 -->[![Years Badge](https://badges.pufler.dev/years/JamesLi-dev)](https://badges.pufler.dev)
 
 
-
--------
-
 <!--START_SECTION:waka-->
 
 ```text
@@ -20,3 +17,8 @@ JavaScript   0 secs          █░░░░░░░░░░░░░░░░
 
 <!--END_SECTION:waka-->
 
+-------
+
+<!--START_SECTION:activity-->
+
+<!--END_SECTION:activity-->
