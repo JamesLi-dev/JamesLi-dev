@@ -82,6 +82,10 @@ it allows you to create nice and simple GitHub Readme files that you can copy/pa
 
 Python       1 hr 52 mins    ████████▓░░░░░░░░░░░░░░░░   34.46 %
 Other        1 hr 38 mins    ███████▓░░░░░░░░░░░░░░░░░   30.23 %
+YAML         43 mins         ███▒░░░░░░░░░░░░░░░░░░░░░   13.17 %
+JavaScript   30 mins         ██▒░░░░░░░░░░░░░░░░░░░░░░   09.47 %
+Vue.js       16 mins         █▒░░░░░░░░░░░░░░░░░░░░░░░   05.05 %
+Markdown     7 mins          ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.38 %
 ```
 
 ```text
