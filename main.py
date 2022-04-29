@@ -233,7 +233,7 @@ def prep_content(stats: dict | None, /) -> str:
         contents += f'Total Time: {total_time}\n\n'
 
     # make content
-    logger.debug('Making contents')
+    logger.debug('Making contents', lang_info)
     pad_len = len(
         max((str(l.get('name')) for l in lang_info), key=len)
         # comment if it feels way computationally expensive
