@@ -176,11 +176,13 @@ def make_title(dawn: str, dusk: str, type: str, /) -> str:
         sys.exit(1)
     logger.debug('Title was made')
 
-    if type == 'editors' : type_name = '『 编辑器 』'
-    if type == 'languages' : type_name = '『 语言 』'
-    if type == 'projects' : type_name = '『 项目 』'
+    if type == 'editors' : type_name = '使用代码『 编辑器 』'
+    if type == 'languages' : type_name = '使用代码『 语言 』'
+    if type == 'projects' : type_name = '使用代码『 项目 』'
+    if type == 'categories' : type_name = '『 时间花在了那些地方 』'
+    if type == 'operating_systems' : type_name = '『 使用的电脑系统 』'
 
-    return f'以下是使用代码 {type_name} 统计 从: {start_date} - 到: {end_date}'
+    return f'以下是 {type_name} 统计 从: {start_date} - 到: {end_date}'
 
 
 def make_graph(
@@ -233,7 +235,7 @@ def prep_content(stats: dict | None, /) -> str:
         contents += f'Total Time: {total_time}\n\n'
 
     # make content
-    logger.debug('Making contents', lang_info)
+    logger.debug('Making contents')
     pad_len = len(
         max((str(l.get('name')) for l in lang_info), key=len)
         # comment if it feels way computationally expensive
@@ -370,6 +372,118 @@ def prep_projects_content(stats: dict | None, /) -> str:
     logger.debug('Contents were made')
     return contents.rstrip('\n')
 
+# 时间花费
+def prep_categories_content(stats: dict | None, /) -> str:
+    """
+    WakaReadme Prepare Markdown
+    ---------------------------
+
+    Prepared markdown content from the fetched statistics
+    ```
+    """
+    contents: str = ''
+
+    # Check if any data exists
+    if not (lang_info := stats.get('categories')):
+        logger.debug('The data seems to be empty, please wait for a day')
+        contents += 'No activity tracked'
+        return contents
+
+    # make title
+    if wk_i.show_title:
+        contents += make_title(stats.get('start'), stats.get('end'), 'categories') + '\n\n'
+
+    # make byline
+    if wk_i.show_total_time and (
+        total_time := stats.get('human_readable_total')
+    ):
+        contents += f'Total Time: {total_time}\n\n'
+
+    # make content
+    logger.debug('Making contents')
+    pad_len = len(
+        max((str(l.get('name')) for l in lang_info), key=len)
+        # comment if it feels way computationally expensive
+        # and then don't for get to set pad_len to say 13 :)
+    )
+    for idx, lang in enumerate(lang_info):
+        lang_name: str = lang.get('name')
+        # >>> add editors to filter here <<<
+        # if lang_name in {...}: continue
+        lang_time: str = lang.get('text') if wk_i.show_time else ''
+        lang_ratio: float = lang.get('percent')
+        lang_bar: str = make_graph(
+            wk_i.block_style, lang_ratio, wk_c.graph_length,
+            lg_nm=lang_name
+        )
+        contents += (
+            f'{lang_name.ljust(pad_len)}   ' +
+            f'{lang_time: <16}{lang_bar}   ' +
+            f'{lang_ratio:.2f}'.zfill(5) + ' %\n'
+        )
+        if idx >= 5 or lang_name == 'Other':
+            break
+
+    logger.debug('Contents were made')
+    return contents.rstrip('\n')
+
+# 时间花费
+def prep_systems_content(stats: dict | None, /) -> str:
+    """
+    WakaReadme Prepare Markdown
+    ---------------------------
+
+    Prepared markdown content from the fetched statistics
+    ```
+    """
+    contents: str = ''
+
+    # Check if any data exists
+    if not (lang_info := stats.get('operating_systems')):
+        logger.debug('The data seems to be empty, please wait for a day')
+        contents += 'No activity tracked'
+        return contents
+
+    # make title
+    if wk_i.show_title:
+        contents += make_title(stats.get('start'), stats.get('end'), 'operating_systems') + '\n\n'
+
+    # make byline
+    if wk_i.show_total_time and (
+        total_time := stats.get('human_readable_total')
+    ):
+        contents += f'Total Time: {total_time}\n\n'
+
+    # make content
+    logger.debug('Making contents')
+    pad_len = len(
+        max((str(l.get('name')) for l in lang_info), key=len)
+        # comment if it feels way computationally expensive
+        # and then don't for get to set pad_len to say 13 :)
+    )
+    for idx, lang in enumerate(lang_info):
+        lang_name: str = lang.get('name')
+        # >>> add editors to filter here <<<
+        # if lang_name in {...}: continue
+        lang_time: str = lang.get('text') if wk_i.show_time else ''
+        lang_ratio: float = lang.get('percent')
+        lang_bar: str = make_graph(
+            wk_i.block_style, lang_ratio, wk_c.graph_length,
+            lg_nm=lang_name
+        )
+        contents += (
+            f'{lang_name.ljust(pad_len)}   ' +
+            f'{lang_time: <16}{lang_bar}   ' +
+            f'{lang_ratio:.2f}'.zfill(5) + ' %\n'
+        )
+        if idx >= 5 or lang_name == 'Other':
+            break
+
+    logger.debug('Contents were made')
+    return contents.rstrip('\n')
+
+
+
 
 # API获取wakatime 统计
 def fetch_stats() -> Any:
@@ -432,9 +546,17 @@ def churn(old_readme: str, /) -> str | None:
     generated_projects_content = prep_projects_content(waka_stats)
     print('\n', generated_projects_content, '\n', sep='')
 
+    # 时间花费
+    generated_categories_content = prep_categories_content(waka_stats)
+    print('\n', generated_categories_content, '\n', sep='')
+
+    # 系统
+    operating_systems_content = prep_systems_content(waka_stats)
+    print('\n', operating_systems_content, '\n', sep='')
+
     new_readme = re.sub(
         pattern=wk_c.waka_block_pattern,
-        repl=f'{wk_c.start_comment}\n\n```text\n{generated_content}\n```\n\n```text\n{generated_editors_content}\n```\n\n```text\n{generated_projects_content}\n```\n\n{wk_c.end_comment}',
+        repl=f'{wk_c.start_comment}\n\n```text\n{generated_content}\n```\n\n```text\n{generated_editors_content}\n```\n\n```text\n{generated_projects_content}\n```\n\n```text\n{generated_categories_content}\n```\n\n```text\n{operating_systems_content}\n```\n\n{wk_c.end_comment}',
         string=old_readme
     )
     # return None  # un-comment when testing with --dev
