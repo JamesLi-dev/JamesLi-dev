@@ -251,12 +251,13 @@ def prep_content(stats: dict | None, /) -> str:
             wk_i.block_style, lang_ratio, wk_c.graph_length,
             lg_nm=lang_name
         )
-        contents += (
+
+        if lang_name != 'Other' : contents += (
             f'{lang_name.ljust(pad_len)}   ' +
             f'{lang_time: <16}{lang_bar}   ' +
             f'{lang_ratio:.2f}'.zfill(5) + ' %\n'
         )
-        if idx >= 5 or lang_name == 'Other':
+        if idx >= 5:
             break
 
     logger.debug('Contents were made')
