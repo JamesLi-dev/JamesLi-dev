@@ -80,7 +80,11 @@ it allows you to create nice and simple GitHub Readme files that you can copy/pa
 ```text
 以下是 使用代码『 语言 』 统计 从: 2022-04-18 - 到: 2022-05-18
 
-Other        37 hrs 45 mins  ████████████████░░░░░░░░░   64.20 %
+TypeScript   11 hrs 25 mins  █████░░░░░░░░░░░░░░░░░░░░   19.42 %
+Vue.js       3 hrs 39 mins   █▓░░░░░░░░░░░░░░░░░░░░░░░   06.22 %
+Python       2 hrs 1 min     █░░░░░░░░░░░░░░░░░░░░░░░░   03.46 %
+JavaScript   1 hr 39 mins    ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.81 %
+LESS         51 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.47 %
 ```
 
 ```text
