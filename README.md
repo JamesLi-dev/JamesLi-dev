@@ -51,7 +51,7 @@ it allows you to create nice and simple GitHub Readme files that you can copy/pa
 --------
 
 <!-- github 状态 -->
-<div align="center" margin-bottom="10px">
+<div align="center" margin-bottom="5px">
   <a href="https://github.com/JamesLi-dev/JamesLi-dev">
     <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=JamesLi-dev" />
   </a> 
@@ -69,7 +69,14 @@ it allows you to create nice and simple GitHub Readme files that you can copy/pa
 
 -------
 
-![GitHub metrics](https://metrics.lecoq.io/JamesLi-dev)  
+<!-- ![GitHub metrics](https://metrics.lecoq.io/JamesLi-dev)   -->
+
+#### Top Repositories
+
+
+<a href="https://github.com/JamesLi-dev/Knowledge-Map">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=JamesLi-dev&repo=Knowledge-Map&theme=buefy" />
+</a>
 
 -------
 
