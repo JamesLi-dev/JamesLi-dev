@@ -178,7 +178,7 @@ def make_title(dawn: str, dusk: str, type: str, /) -> str:
 
     if type == 'editors' : type_name = '使用代码『 编辑器 』'
     if type == 'languages' : type_name = '使用代码『 语言 』'
-    if type == 'projects' : type_name = '使用代码『 项目 』'
+#     if type == 'projects' : type_name = '使用代码『 项目 』'
     if type == 'categories' : type_name = '『 时间花在了那些地方 』'
     if type == 'operating_systems' : type_name = '『 使用的电脑系统 』'
 
@@ -543,9 +543,9 @@ def churn(old_readme: str, /) -> str | None:
     # 使用的编辑器
     generated_editors_content = prep_editors_content(waka_stats)
     print('\n', generated_editors_content, '\n', sep='')
-    # 项目
-    generated_projects_content = prep_projects_content(waka_stats)
-    print('\n', generated_projects_content, '\n', sep='')
+#     # 项目
+#     generated_projects_content = prep_projects_content(waka_stats)
+#     print('\n', generated_projects_content, '\n', sep='')
 
     # 时间花费
     generated_categories_content = prep_categories_content(waka_stats)
