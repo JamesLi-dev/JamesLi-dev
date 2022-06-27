@@ -557,7 +557,7 @@ def churn(old_readme: str, /) -> str | None:
 
     new_readme = re.sub(
         pattern=wk_c.waka_block_pattern,
-        repl=f'{wk_c.start_comment}\n\n```text\n{generated_content}\n```\n\n```text\n{generated_editors_content}\n```\n\n```text\n{generated_projects_content}\n```\n\n```text\n{generated_categories_content}\n```\n\n```text\n{operating_systems_content}\n```\n\n{wk_c.end_comment}',
+        repl=f'{wk_c.start_comment}\n\n```text\n{generated_content}\n```\n\n```text\n{generated_editors_content}\n```\n\n```text\n{generated_categories_content}\n```\n\n```text\n{operating_systems_content}\n```\n\n{wk_c.end_comment}',
         string=old_readme
     )
     # return None  # un-comment when testing with --dev
