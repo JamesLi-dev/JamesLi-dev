@@ -85,27 +85,19 @@ it allows you to create nice and simple GitHub Readme files that you can copy/pa
 <!--START_SECTION:waka-->
 
 ```text
-以下是 使用代码『 语言 』 统计 从: 2023-01-02 - 到: 2023-02-01
-
-Markdown   16 mins         █████████████████████████   100.00 %
+No activity tracked
 ```
 
 ```text
-以下是 使用代码『 编辑器 』 统计 从: 2023-01-02 - 到: 2023-02-01
-
-VS Code   16 mins         █████████████████████████   100.00 %
+No activity tracked
 ```
 
 ```text
-以下是 『 时间花在了那些地方 』 统计 从: 2023-01-02 - 到: 2023-02-01
-
-Coding   16 mins         █████████████████████████   100.00 %
+No activity tracked
 ```
 
 ```text
-以下是 『 使用的电脑系统 』 统计 从: 2023-01-02 - 到: 2023-02-01
-
-Windows   16 mins         █████████████████████████   100.00 %
+No activity tracked
 ```
 
 <!--END_SECTION:waka-->
