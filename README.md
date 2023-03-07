@@ -85,19 +85,34 @@ it allows you to create nice and simple GitHub Readme files that you can copy/pa
 <!--START_SECTION:waka-->
 
 ```text
-No activity tracked
+以下是 使用代码『 语言 』 统计 从: 2023-02-04 - 到: 2023-03-06
+
+Markdown     1 hr 40 mins    ███████▓░░░░░░░░░░░░░░░░░   30.68 %
+JavaScript   13 mins         █░░░░░░░░░░░░░░░░░░░░░░░░   04.14 %
+TSConfig     1 min           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.46 %
+JSON         0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.26 %
 ```
 
 ```text
-No activity tracked
+以下是 使用代码『 编辑器 』 统计 从: 2023-02-04 - 到: 2023-03-06
+
+Browser   3 hrs 32 mins   ████████████████░░░░░░░░░   64.45 %
+VS Code   1 hr 56 mins    █████████░░░░░░░░░░░░░░░░   35.55 %
 ```
 
 ```text
-No activity tracked
+以下是 『 时间花在了那些地方 』 统计 从: 2023-02-04 - 到: 2023-03-06
+
+Browsing    3 hrs 32 mins   ████████████████░░░░░░░░░   64.44 %
+Coding      1 hr 56 mins    █████████░░░░░░░░░░░░░░░░   35.55 %
+Debugging   0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.01 %
 ```
 
 ```text
-No activity tracked
+以下是 『 使用的电脑系统 』 统计 从: 2023-02-04 - 到: 2023-03-06
+
+Windows   4 hrs 4 mins    ██████████████████▓░░░░░░   74.27 %
+Mac       1 hr 24 mins    ██████▒░░░░░░░░░░░░░░░░░░   25.73 %
 ```
 
 <!--END_SECTION:waka-->
