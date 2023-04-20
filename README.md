@@ -11,6 +11,8 @@ I made this project just for fun,
 it allows you to create nice and simple GitHub Readme files that you can copy/paste and use in your profile.
 
  - 🔭 I’m currently working on this page.   <a href="https://github.com/JamesLi-dev"><img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='30'></a>
+ 
+ [个人主页 https://jamesli-dev.github.io/](https://jamesli-dev.github.io)
 
 <!-- REACT / VUE / JS / HTML / CSS / NodeJS -->
 
@@ -36,8 +38,6 @@ it allows you to create nice and simple GitHub Readme files that you can copy/pa
 <!-- <a title="Docker" href="https://www.docker.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> 
   <a title="flutter" href="https://flutter.dev" target="_blank"> <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="40" height="40"/> </a>  -->
 
-
-<!-- [](https://github.com/JamesLi-dev)   -->
 
 <div align="center">
 
