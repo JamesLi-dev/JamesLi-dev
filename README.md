@@ -13,7 +13,7 @@ it allows you to create nice and simple GitHub Readme files that you can copy/pa
  - 🔭 I’m currently working on this page.   <a href="https://github.com/JamesLi-dev"><img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='30'></a>
 
  
- [个人主页 https://blog.torli.top/](https://blog.torli.top/)
+ [个人主页 https://www.torli.top/](https://www.torli.top/)
 
 <!-- REACT / VUE / JS / HTML / CSS / NodeJS -->
 
