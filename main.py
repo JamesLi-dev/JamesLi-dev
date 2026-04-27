@@ -78,18 +78,18 @@ class WakaInput:
         """
         # mapped environment variables
         # # required
-        self.gh_token: str = os.getenv('INPUT_GH_TOKEN')
-        self.waka_key: str = os.getenv('INPUT_WAKATIME_API_KEY')
-        self.api_base_url: str = os.getenv('INPUT_API_BASE_URL')
-        self.repository: str = os.getenv('INPUT_REPOSITORY')
+        self.gh_token: str | None = getenv_stripped('INPUT_GH_TOKEN')
+        self.waka_key: str | None = getenv_stripped('INPUT_WAKATIME_API_KEY')
+        self.api_base_url: str | None = getenv_stripped('INPUT_API_BASE_URL')
+        self.repository: str | None = getenv_stripped('INPUT_REPOSITORY')
         # # depends
-        self.commit_message: str = os.getenv("INPUT_COMMIT_MESSAGE")
+        self.commit_message: str | None = getenv_stripped("INPUT_COMMIT_MESSAGE")
         # # optional
-        self.show_title: str | bool = os.getenv("INPUT_SHOW_TITLE")
-        self.block_style: str = os.getenv("INPUT_BLOCKS")
-        self.time_range: str = os.getenv("INPUT_TIME_RANGE")
-        self.show_time: str | bool = os.getenv("INPUT_SHOW_TIME")
-        self.show_total_time: str | bool = os.getenv("INPUT_SHOW_TOTAL")
+        self.show_title: str | bool | None = getenv_stripped("INPUT_SHOW_TITLE")
+        self.block_style: str | None = getenv_stripped("INPUT_BLOCKS")
+        self.time_range: str | None = getenv_stripped("INPUT_TIME_RANGE")
+        self.show_time: str | bool | None = getenv_stripped("INPUT_SHOW_TIME")
+        self.show_total_time: str | bool | None = getenv_stripped("INPUT_SHOW_TOTAL")
 
     def validate_input(self) -> bool:
         """
@@ -97,11 +97,21 @@ class WakaInput:
         ------------------
         """
 
-        if not (self.gh_token or self.waka_key or self.api_base_url or self.repository):
-            logger.error('Invalid required input(s)')
+        missing_required = []
+        if not self.gh_token:
+            missing_required.append('GH_TOKEN')
+        if not self.waka_key:
+            missing_required.append('WAKATIME_API_KEY')
+        if not self.api_base_url:
+            missing_required.append('API_BASE_URL')
+        if not self.repository:
+            missing_required.append('REPOSITORY')
+
+        if missing_required:
+            logger.error('Missing required input(s): %s', ', '.join(missing_required))
             return False
 
-        if len(self.commit_message) < 1:
+        if not self.commit_message or len(self.commit_message) < 1:
             logger.error('Invalid commit message')
             return False
 
@@ -113,9 +123,10 @@ class WakaInput:
             logger.error(err)
             return False
 
-        if len(self.block_style) < 2:
+        if not self.block_style or len(self.block_style) < 2:
             logger.warning('Invalid block length')
             logger.debug('Using default blocks: ░▒▓█')
+            self.block_style = '░▒▓█'
 
         # 'all_time' is un-documented, should it be used?
         if self.time_range not in {
@@ -152,6 +163,15 @@ def strtobool(val: str) -> bool:
         return False
 
     raise ValueError(f'invalid truth value for {val}')
+
+
+def getenv_stripped(name: str) -> str | None:
+    """Return a stripped environment variable, normalizing empty strings to None."""
+    value = os.getenv(name)
+    if value is None:
+        return None
+    value = value.strip()
+    return value or None
 
 
 ################### logic ###################
@@ -569,7 +589,15 @@ def genesis() -> None:
     """Run Program"""
     logger.debug('Conneting to GitHub')
     gh_connect = Github(wk_i.gh_token)
-    gh_repo = gh_connect.get_repo(wk_i.repository)
+    try:
+        gh_repo = gh_connect.get_repo(wk_i.repository)
+    except GithubException as gh_exp:
+        if gh_exp.status == 401:
+            logger.critical(
+                'GitHub authentication failed. Check whether GH_TOKEN is valid and whether '
+                'the caller workflow grants contents: write permission.'
+            )
+        raise
     readme_file = gh_repo.get_readme()
     logger.debug('Decoding readme contents')
     readme_contents = str(readme_file.decoded_content, encoding='utf-8')
