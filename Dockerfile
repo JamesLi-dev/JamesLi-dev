@@ -21,7 +21,7 @@ RUN pipx install "poetry==$POETRY_VERSION"
 RUN pipx ensurepath
 
 # install dependencies
-COPY pyproject.toml poetry.lock /
+COPY pyproject.toml /
 RUN poetry install --only main --no-root --no-interaction --no-ansi
 
 # copy and run program
