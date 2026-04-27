@@ -1,6 +1,6 @@
 <div align="center">
 
-# James Li
+# Torres Li
 
 ### Frontend Engineer / Full Stack Developer
 
