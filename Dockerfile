@@ -22,7 +22,7 @@ RUN pipx ensurepath
 
 # install dependencies
 COPY pyproject.toml poetry.lock /
-RUN poetry install --no-dev --no-root --no-interaction --no-ansi
+RUN poetry install --only main --no-root --no-interaction --no-ansi
 
 # copy and run program
 ADD main.py /main.py
