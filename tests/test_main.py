@@ -106,8 +106,12 @@ class TestMain(unittest.TestCase):
     def test_make_title(self) -> None:
         """Test title maker"""
         self.assertRegex(
-            prime.make_title('2022-01-11T23:18:19Z', '2021-12-09T10:22:06Z'),
-            r'From: \d{2} \w{3,9} \d{4} - To: \d{2} \w{3,9} \d{4}'
+            prime.make_title(
+                '2022-01-11T23:18:19Z',
+                '2021-12-09T10:22:06Z',
+                'languages'
+            ),
+            r'以下是 使用代码『 语言 』 统计 从: \d{4}-\d{2}-\d{2} - 到: \d{4}-\d{2}-\d{2}'
         )
 
     # Known test limits
