@@ -1,44 +1,41 @@
-![image](https://user-images.githubusercontent.com/26141443/165725889-9457cc81-c788-4d32-a27c-2e1906d3ccc9.png)
-
 <div align="center">
-  <image align="center" src="https://readme-typing-svg.herokuapp.com?color=522FF7&lines=Welcome+to+my+GitHub+homepage" />
+
+# James Li
+
+### Frontend Engineer / Full Stack Developer
+
+构建简洁、稳定、注重体验的 Web 应用，也持续整理自己的知识体系。
+
+[![Blog](https://img.shields.io/badge/Blog-doc.torli.top-0f172a?style=flat-square&logo=google-chrome&logoColor=white)](https://doc.torli.top/)
+[![GitHub](https://img.shields.io/badge/GitHub-JamesLi--dev-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/JamesLi-dev)
+[![Focus](https://img.shields.io/badge/Focus-Frontend%20%26%20Engineering-2563eb?style=flat-square)](#skills)
+
 </div>
-<div align="center">
-  <image align="center" src="https://readme-typing-svg.herokuapp.com?color=522FF7&lines=%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E6%88%91%E7%9A%84+github+%E4%B8%BB%E9%A1%B5" />
-</div>
 
-I made this project just for fun, 
-it allows you to create nice and simple GitHub Readme files that you can copy/paste and use in your profile.
+## About Me
 
- - 🔭 I’m currently working on this page.   <a href="https://github.com/JamesLi-dev"><img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='30'></a>
+- Building modern web apps with a focus on maintainability and product quality.
+- Interested in frontend architecture, full stack delivery, and developer experience.
+- Writing and organizing notes at [doc.torli.top](https://doc.torli.top/).
 
- 
- [个人主页 https://doc.torli.top/](https://doc.torli.top/)
+## Skills
 
-<!-- REACT / VUE / JS / HTML / CSS / NodeJS -->
-
-## Skills: 
-<div align="left">
-  <a title="HTML" href="https://www.w3.org/html/" target="_blank"> <img src="https://camo.githubusercontent.com/da7acacadecf91d6dc02efcd2be086bb6d78ddff19a1b7a0ab2755a6fda8b1e9/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f68746d6c352f68746d6c352d6f726967696e616c2e737667" alt="html5" width="40" height="40"/> </a> 
-  <a title="JS" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://camo.githubusercontent.com/442c452cb73752bb1914ce03fce2017056d651a2099696b8594ddf5ccc74825e/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6a6176617363726970742f6a6176617363726970742d6f726967696e616c2e737667" alt="javascript" width="40" height="40"/> </a> 
-  <a title="CSS" href="https://www.w3schools.com/css/" target="_blank"> <img src="https://camo.githubusercontent.com/2e496d4bfc6f753ddca87b521ce95c88219f77800212ffa6d4401ad368c82170/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f637373332f637373332d6f726967696e616c2e737667" alt="css3" width="40" height="40"/> </a> 
-  <a title="React" href="https://reactjs.org/" target="_blank"> <img src="https://camo.githubusercontent.com/27d0b117da00485c56d69aef0fa310a3f8a07abecc8aa15fa38c8b78526c60ac/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f72656163742f72656163742d6f726967696e616c2e737667" alt="react" width="40" height="40"/> </a> 
-  <a title="VUE" href="https://vuejs.org/" target="_blank"> <img src="https://cn.vuejs.org/images/logo.svg" alt="vuejs" width="40" height="40"/> 
-   <a title="uni-app" href="https://uniapp.dcloud.io/" target="_blank"> <img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-f184e7c3-1912-41b2-b81f-435d1b37c7b4/1ae87107-2943-4ba6-be2b-390ca27c6260.png" alt="vuejs" width="135" height="30"/> 
-  <a title="NodeJS" href="https://nodejs.org" target="_blank"> <img src="https://camo.githubusercontent.com/900baefb89e187c8b32cdbb3b440d1502fe8f30a1a335cc5dc5868af0142f8b1/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6e6f64656a732f6e6f64656a732d6f726967696e616c2e737667" alt="nodejs" width="40" height="40"/> </a> 
-  <a title="MongoDB" href="https://www.mongodb.com/" target="_blank"> <img src="https://camo.githubusercontent.com/9ebde7ca22ab3f3b4bf92d2743804ab9e581e413a16cdf3626c2092e69967d80/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6d6f6e676f64622f6d6f6e676f64622d6f726967696e616c2e737667" alt="mongodb" width="40" height="40"/> </a> 
-  <a title="Mysql" href="https://www.mysql.com/" target="_blank"> <img src="https://camo.githubusercontent.com/2582ec2237a3a1fbd34e9b57332b72be27a7facb32abe7c2335e5f86e5f457a8/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6d7973716c2f6d7973716c2d6f726967696e616c2e737667" alt="mysql" width="40" height="40"/> </a> 
-  <a title="GIT" href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> 
-  <a title="Nginx" href="https://www.nginx.com" target="_blank"> <img src="http://nginx.org/nginx.png" alt="nginx" width="95" height="30"/> </a> 
-  <a title="ReactNative" href="https://reactnative.dev/" target="_blank"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a>  </a>
-    <a title="Redis" href="https://redis.io/" target="_blank"> <img src="https://imgsa.baidu.com/forum/pic/item/7af40ad162d9f2d390ed4c4babec8a136227cc92.jpg" alt="reactnative" width="40" height="40"/> </a>  </a>
-  <a title="Webpack" href="https://webpack.js.org" target="_blank"> <img src="https://avatars.githubusercontent.com/u/2105791?s=200&v=4" alt="webpack" width="40" height="40"/> </a>
-  <a title="Vite" href="https://vitejs.cn/" target="_blank"> <img src="https://vitejs.cn/logo.svg" alt="webpack" width="40" height="40"/> </a> </p>
-</div>  
-
-<!-- <a title="Docker" href="https://www.docker.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> 
-  <a title="flutter" href="https://flutter.dev" target="_blank"> <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="40" height="40"/> </a>  -->
-
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111827)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Vue](https://img.shields.io/badge/Vue-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=0f172a)
+![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![uni-app](https://img.shields.io/badge/uni--app-2B2B2B?style=for-the-badge)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
+![Webpack](https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=webpack&logoColor=0f172a)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![React Native](https://img.shields.io/badge/React%20Native-61DAFB?style=for-the-badge&logo=react&logoColor=0f172a)
 
 <div align="center">
 
@@ -55,7 +52,7 @@ it allows you to create nice and simple GitHub Readme files that you can copy/pa
 <div align="center" margin-bottom="5px">
   <a href="https://github.com/JamesLi-dev/JamesLi-dev">
     <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=JamesLi-dev" />
-  </a> 
+  </a>
   <a href="https://github.com/JamesLi-dev/JamesLi-dev">
     <img align="center" src="https://github-readme-stats.vercel.app/api?username=JamesLi-dev&show_icons=true&theme=buefy" />
   </a>
