@@ -14,9 +14,13 @@ inputs:
     default: ${{ github.token }}
     required: true
 
+  WAKATIME_AUTH_TOKEN:
+    description: "Your WakaTime personal OAuth token from https://wakatime.com/oauth"
+    required: false
+
   WAKATIME_API_KEY:
-    description: "Your Wakatime/Wakapi/Hakatime API Key"
-    required: true
+    description: "Legacy API key for compatible backends (Wakapi/Hakatime). For WakaTime use WAKATIME_AUTH_TOKEN."
+    required: false
 
   API_BASE_URL:
     description: "Alternative API base URL when using a third-party WakaTime-ish backend"

@@ -79,6 +79,7 @@ class WakaInput:
         # mapped environment variables
         # # required
         self.gh_token: str | None = getenv_stripped('INPUT_GH_TOKEN')
+        self.waka_token: str | None = getenv_stripped('INPUT_WAKATIME_AUTH_TOKEN')
         self.waka_key: str | None = getenv_stripped('INPUT_WAKATIME_API_KEY')
         self.api_base_url: str | None = getenv_stripped('INPUT_API_BASE_URL')
         self.repository: str | None = getenv_stripped('INPUT_REPOSITORY')
@@ -100,8 +101,8 @@ class WakaInput:
         missing_required = []
         if not self.gh_token:
             missing_required.append('GH_TOKEN')
-        if not self.waka_key:
-            missing_required.append('WAKATIME_API_KEY')
+        if not (self.waka_token or self.waka_key):
+            missing_required.append('WAKATIME_AUTH_TOKEN (or WAKATIME_API_KEY for compatible backends)')
         if not self.api_base_url:
             missing_required.append('API_BASE_URL')
         if not self.repository:
@@ -516,7 +517,11 @@ def fetch_stats() -> Any:
     """
     tries, statistic = 3, {}
     logger.debug('Fetching WakaTime statistics')
-    encoded_key: str = str(b64encode(bytes(wk_i.waka_key, 'utf-8')), 'utf-8')
+    if wk_i.waka_token:
+        authorization = f'Bearer {wk_i.waka_token}'
+    else:
+        encoded_key = b64encode(wk_i.waka_key.encode('utf-8')).decode('utf-8')
+        authorization = f'Basic {encoded_key}'
 
     with requests.Session() as rqs:
         # why session? read @
@@ -524,7 +529,7 @@ def fetch_stats() -> Any:
         while tries > 0:
             resp = rqs.get(
                 url=f'{wk_i.api_base_url.rstrip("/")}/v1/users/current/stats/{wk_i.time_range}',
-                headers={'Authorization': f'Basic {encoded_key}'}
+                headers={'Authorization': authorization}
             )
             logger.debug(
                 f'API response @ trial #{4 - tries}: {resp.status_code} {resp.reason}'
@@ -532,6 +537,11 @@ def fetch_stats() -> Any:
             if resp.status_code == 200 and (statistic := resp.json()):
                 logger.debug('Fetched WakaTime statistics')
                 break
+            if resp.status_code in (401, 403):
+                logger.error('WakaTime authentication failed (%s). Set WAKATIME_AUTH_TOKEN '
+                             'to a valid personal OAuth token with permission to read stats.',
+                             resp.status_code)
+                sys.exit(1)
             logger.debug('Retrying in 3s ...')
             sleep(3)
             tries -= 1

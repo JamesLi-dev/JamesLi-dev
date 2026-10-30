@@ -23,6 +23,6 @@ jobs:
       - name: Update Readme
         uses: JamesLi-dev/JamesLi-dev@master
         with:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          WAKATIME_AUTH_TOKEN: ${{ secrets.WAKATIME_AUTH_TOKEN }}
           GH_TOKEN: ${{ secrets.GH_TOKEN}}
           SHOW_TITLE: true
