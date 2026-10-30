@@ -111,7 +111,7 @@ class TestMain(unittest.TestCase):
                 '2021-12-09T10:22:06Z',
                 'languages'
             ),
-            r'以下是 使用代码『 语言 』 统计 从: \d{4}-\d{2}-\d{2} - 到: \d{4}-\d{2}-\d{2}'
+            r'以下是 使用代码『 语言 』 统计 从: \d{4}-\d{2}-\d{2} - \d{4}-\d{2}-\d{2}'
         )
 
     # Known test limits

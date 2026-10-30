@@ -177,7 +177,7 @@ def getenv_stripped(name: str) -> str | None:
 
 ################### logic ###################
 
-def make_title(dawn: str, dusk: str, type: str, /) -> str:
+def make_title(dawn: str, dusk: str, type: str, /, *, language: str = "zh") -> str:
     """
     WakaReadme Title
     ----------------
@@ -199,11 +199,16 @@ def make_title(dawn: str, dusk: str, type: str, /) -> str:
 
     if type == 'editors' : type_name = '使用代码『 编辑器 』'
     if type == 'languages' : type_name = '使用代码『 语言 』'
-#     if type == 'projects' : type_name = '使用代码『 项目 』'
+    if type == 'projects' : type_name = '使用代码『 项目 』'
     if type == 'categories' : type_name = '『 时间花在了那些地方 』'
     if type == 'operating_systems' : type_name = '『 使用的电脑系统 』'
 
-    return f'以下是 {type_name} 统计 从: {start_date} - 到: {end_date}'
+    if language == 'en':
+        labels = {'languages': 'Languages', 'editors': 'Editors',
+                  'categories': 'Activities', 'operating_systems': 'Operating Systems',
+                  'projects': 'Projects'}
+        return f'{labels[type]}: {start_date} - {end_date}'
+    return f'以下是 {type_name} 统计 从: {start_date} - {end_date}'
 
 
 def make_graph(
@@ -229,7 +234,7 @@ def make_graph(
     return graph_bar
 
 # 语言
-def prep_content(stats: dict | None, /) -> str:
+def prep_content(stats: dict | None, /, *, language: str = "zh") -> str:
     """
     WakaReadme Prepare Markdown
     ---------------------------
@@ -247,7 +252,7 @@ def prep_content(stats: dict | None, /) -> str:
 
     # make title
     if wk_i.show_title:
-        contents += make_title(stats.get('start'), stats.get('end'), 'languages') + '\n\n'
+        contents += make_title(stats.get('start'), stats.get('end'), 'languages', language=language) + '\n\n'
 
     # make byline
     if wk_i.show_total_time and (
@@ -285,7 +290,7 @@ def prep_content(stats: dict | None, /) -> str:
     return contents.rstrip('\n')
 
 # 工具编辑器
-def prep_editors_content(stats: dict | None, /) -> str:
+def prep_editors_content(stats: dict | None, /, *, language: str = "zh") -> str:
     """
     WakaReadme Prepare Markdown
     ---------------------------
@@ -303,7 +308,7 @@ def prep_editors_content(stats: dict | None, /) -> str:
 
     # make title
     if wk_i.show_title:
-        contents += make_title(stats.get('start'), stats.get('end'), 'editors') + '\n\n'
+        contents += make_title(stats.get('start'), stats.get('end'), 'editors', language=language) + '\n\n'
 
     # make byline
     if wk_i.show_total_time and (
@@ -340,7 +345,7 @@ def prep_editors_content(stats: dict | None, /) -> str:
     return contents.rstrip('\n')
 
 # 项目
-def prep_projects_content(stats: dict | None, /) -> str:
+def prep_projects_content(stats: dict | None, /, *, language: str = "zh") -> str:
     """
     WakaReadme Prepare Markdown
     ---------------------------
@@ -358,7 +363,7 @@ def prep_projects_content(stats: dict | None, /) -> str:
 
     # make title
     if wk_i.show_title:
-        contents += make_title(stats.get('start'), stats.get('end'), 'projects') + '\n\n'
+        contents += make_title(stats.get('start'), stats.get('end'), 'projects', language=language) + '\n\n'
 
     # make byline
     if wk_i.show_total_time and (
@@ -395,7 +400,7 @@ def prep_projects_content(stats: dict | None, /) -> str:
     return contents.rstrip('\n')
 
 # 时间花费
-def prep_categories_content(stats: dict | None, /) -> str:
+def prep_categories_content(stats: dict | None, /, *, language: str = "zh") -> str:
     """
     WakaReadme Prepare Markdown
     ---------------------------
@@ -413,7 +418,7 @@ def prep_categories_content(stats: dict | None, /) -> str:
 
     # make title
     if wk_i.show_title:
-        contents += make_title(stats.get('start'), stats.get('end'), 'categories') + '\n\n'
+        contents += make_title(stats.get('start'), stats.get('end'), 'categories', language=language) + '\n\n'
 
     # make byline
     if wk_i.show_total_time and (
@@ -450,7 +455,7 @@ def prep_categories_content(stats: dict | None, /) -> str:
     return contents.rstrip('\n')
 
 # 时间花费
-def prep_systems_content(stats: dict | None, /) -> str:
+def prep_systems_content(stats: dict | None, /, *, language: str = "zh") -> str:
     """
     WakaReadme Prepare Markdown
     ---------------------------
@@ -468,7 +473,7 @@ def prep_systems_content(stats: dict | None, /) -> str:
 
     # make title
     if wk_i.show_title:
-        contents += make_title(stats.get('start'), stats.get('end'), 'operating_systems') + '\n\n'
+        contents += make_title(stats.get('start'), stats.get('end'), 'operating_systems', language=language) + '\n\n'
 
     # make byline
     if wk_i.show_total_time and (
@@ -553,7 +558,7 @@ def fetch_stats() -> Any:
     return statistic.get('data')
 
 # 最后渲染的内容
-def churn(old_readme: str, /) -> str | None:
+def churn(old_readme: str, /, *, language: str = "zh", stats: dict | None = None) -> str | None:
     """
     WakaReadme Churn
     ----------------
@@ -561,28 +566,28 @@ def churn(old_readme: str, /) -> str | None:
     Composes WakaTime stats within markdown code snippet
     """
     try:
-        if not (waka_stats := fetch_stats()):
+        if not (waka_stats := stats if stats is not None else fetch_stats()):
             logger.error('Unable to fetch data, please rerun workflow')
             sys.exit(1)
     except requests.RequestException as rq_exp:
         logger.critical(rq_exp)
         sys.exit(1)
     # 是用的语言
-    generated_content = prep_content(waka_stats)
+    generated_content = prep_content(waka_stats, language=language)
     print('\n', generated_content, '\n', sep='')
     # 使用的编辑器
-    generated_editors_content = prep_editors_content(waka_stats)
+    generated_editors_content = prep_editors_content(waka_stats, language=language)
     print('\n', generated_editors_content, '\n', sep='')
 #     # 项目
-#     generated_projects_content = prep_projects_content(waka_stats)
+#     generated_projects_content = prep_projects_content(waka_stats, language=language)
 #     print('\n', generated_projects_content, '\n', sep='')
 
     # 时间花费
-    generated_categories_content = prep_categories_content(waka_stats)
+    generated_categories_content = prep_categories_content(waka_stats, language=language)
     print('\n', generated_categories_content, '\n', sep='')
 
     # 系统
-    operating_systems_content = prep_systems_content(waka_stats)
+    operating_systems_content = prep_systems_content(waka_stats, language=language)
     print('\n', operating_systems_content, '\n', sep='')
 
     new_readme = re.sub(
@@ -608,20 +613,34 @@ def genesis() -> None:
                 'the caller workflow grants contents: write permission.'
             )
         raise
-    readme_file = gh_repo.get_readme()
-    logger.debug('Decoding readme contents')
-    readme_contents = str(readme_file.decoded_content, encoding='utf-8')
-    if new_content := churn(readme_contents):
-        logger.debug('Updating readme')
-        gh_repo.update_file(
-            path=readme_file.path,
-            message=wk_i.commit_message,
-            content=new_content,
-            sha=readme_file.sha
-        )
-        logger.info('Updated waka stats successfully')
-        return
-    logger.info('No changes were made')
+    readme_files = [(gh_repo.get_readme(), 'zh')]
+    try:
+        readme_files.append((gh_repo.get_contents('README.en.md'), 'en'))
+    except GithubException as error:
+        if error.status != 404:
+            raise
+        logger.info('README.en.md not found; updating the default README only')
+    # Fetch once so both language versions use the same statistics.
+    try:
+        stats = fetch_stats()
+    except requests.RequestException as error:
+        logger.critical(error)
+        sys.exit(1)
+    if not stats:
+        logger.error('Unable to fetch data, please rerun workflow')
+        sys.exit(1)
+    for readme_file, language in readme_files:
+        readme_contents = readme_file.decoded_content.decode('utf-8')
+        if new_content := churn(readme_contents, language=language, stats=stats):
+            gh_repo.update_file(
+                path=readme_file.path,
+                message=wk_i.commit_message,
+                content=new_content,
+                sha=readme_file.sha
+            )
+            logger.info('Updated %s successfully', readme_file.path)
+        else:
+            logger.info('No changes in %s', readme_file.path)
 
 
 ################### driver ###################
