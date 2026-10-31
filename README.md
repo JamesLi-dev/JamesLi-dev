@@ -1,12 +1,12 @@
 <div align="center">
 
-**简体中文** | [English](./README.en.md)
+**English** | [简体中文](./README.zh-CN.md)
 
 # Torres Li
 
 ### Frontend Engineer / Full Stack Developer
 
-构建简洁、稳定、注重体验的 Web 应用，也持续整理自己的知识体系。
+Building clean, reliable web applications with a focus on user experience, while documenting what I learn.
 
 [![Blog](https://img.shields.io/badge/Blog-doc.torli.top-0f172a?style=flat-square&logo=google-chrome&logoColor=white)](https://doc.torli.top/)
 [![GitHub](https://img.shields.io/badge/GitHub-JamesLi--dev-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/JamesLi-dev)
@@ -41,16 +41,16 @@
 
 <div align="center">
 
-  <!-- 访问人数 --><img align="center" src="https://badges.pufler.dev/visits/JamesLi-dev/JamesLi-dev" />
-  <!-- 项目数 --><img align="center" src="https://badges.pufler.dev/repos/JamesLi-dev" />
-  <!-- 更新时间 --><img align="center" src="https://badges.pufler.dev/updated/JamesLi-dev/JamesLi-dev" />
-  <!-- 创建时间 --><img align="center" src="https://badges.pufler.dev/created/JamesLi-dev/JamesLi-dev" />
-  <!-- github年份 --><img align="center" src="https://badges.pufler.dev/years/JamesLi-dev" />
+  <!-- Visits --><img align="center" src="https://badges.pufler.dev/visits/JamesLi-dev/JamesLi-dev" />
+  <!-- Repositories --><img align="center" src="https://badges.pufler.dev/repos/JamesLi-dev" />
+  <!-- Last updated --><img align="center" src="https://badges.pufler.dev/updated/JamesLi-dev/JamesLi-dev" />
+  <!-- Created --><img align="center" src="https://badges.pufler.dev/created/JamesLi-dev/JamesLi-dev" />
+  <!-- Years on GitHub --><img align="center" src="https://badges.pufler.dev/years/JamesLi-dev" />
 </div>
 
 --------
 
-<!-- github 状态 -->
+<!-- GitHub stats -->
 <div align="center" margin-bottom="5px">
   <a href="https://github.com/JamesLi-dev/JamesLi-dev">
     <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=JamesLi-dev" />
@@ -60,7 +60,7 @@
   </a>
 </div>
 
-<!-- github 使用语言比例 -->
+<!-- GitHub language breakdown -->
 <!-- <div align="center">
   <a href="https://github.com/JamesLi-dev/JamesLi-dev">
     <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JamesLi-dev&exclude_repo=JamesLi-dev&layout=compact&theme=buefy" />
@@ -71,21 +71,28 @@
 
 <!-- ![GitHub metrics](https://metrics.lecoq.io/JamesLi-dev)   -->
 
-#### Top Repositories
+## Featured Project
 
+### [Torli Stats](https://github.com/JamesLi-dev/torli-stats)
 
-<a href="https://github.com/JamesLi-dev/Knowledge-Map">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=JamesLi-dev&repo=Knowledge-Map&theme=buefy" />
-</a>
+A lightweight macOS menu bar app for keeping an eye on system performance and daily activity.
+
+- **System monitoring:** CPU, memory, disk, network speeds, and battery status at a glance.
+- **Daily activity:** typing count, active time, and WakaTime coding time, with integrated Torli Notes.
+- **Make it yours:** configurable menu bar items and dashboard modules, with light and dark appearance modes.
+
+Built with **Swift** · Requires **macOS 15 or later**
+
+[Source code](https://github.com/JamesLi-dev/torli-stats) · [Download](https://github.com/JamesLi-dev/torli-stats/releases/latest) · [User guide](https://github.com/JamesLi-dev/torli-stats/blob/main/docs/user-guide.md)
 
 -------
 
-## 这是我的开发统计
+## Development Statistics
 
 <!--START_SECTION:waka-->
 
 ```text
-以下是 使用代码『 语言 』 统计 从: 2026-09-29 - 2026-10-29
+Languages: 2026-09-29 - 2026-10-29
 
 TypeScript   61 hrs 57 mins  █████████████████▒░░░░░░░   69.64 %
 Vue          4 hrs 39 mins   █▒░░░░░░░░░░░░░░░░░░░░░░░   05.23 %
@@ -95,14 +102,14 @@ Markdown     2 hrs 35 mins   ▓░░░░░░░░░░░░░░░░
 ```
 
 ```text
-以下是 使用代码『 编辑器 』 统计 从: 2026-09-29 - 2026-10-29
+Editors: 2026-09-29 - 2026-10-29
 
 VS Code        72 hrs 9 mins   ████████████████████▒░░░░   81.12 %
 Codex Vscode   16 hrs 47 mins  ████▓░░░░░░░░░░░░░░░░░░░░   18.88 %
 ```
 
 ```text
-以下是 『 时间花在了那些地方 』 统计 从: 2026-09-29 - 2026-10-29
+Activities: 2026-09-29 - 2026-10-29
 
 Coding          52 hrs 40 mins  ██████████████▓░░░░░░░░░░   59.21 %
 AI Coding       35 hrs 37 mins  ██████████░░░░░░░░░░░░░░░   40.05 %
@@ -112,7 +119,7 @@ Building        0 secs          ░░░░░░░░░░░░░░░░
 ```
 
 ```text
-以下是 『 使用的电脑系统 』 统计 从: 2026-09-29 - 2026-10-29
+Operating Systems: 2026-09-29 - 2026-10-29
 
 Mac   88 hrs 57 mins  █████████████████████████   100.00 %
 ```

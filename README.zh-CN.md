@@ -1,26 +1,26 @@
 <div align="center">
 
-[Chinese](./README.md) | **English**
+[English](./README.md) | **简体中文**
 
 # Torres Li
 
-### Frontend Engineer / Full Stack Developer
+### 前端工程师 / 全栈开发者
 
-Building clean, reliable web applications with a focus on user experience, while documenting what I learn.
+构建简洁、稳定、注重体验的 Web 应用，也持续整理自己的知识体系。
 
 [![Blog](https://img.shields.io/badge/Blog-doc.torli.top-0f172a?style=flat-square&logo=google-chrome&logoColor=white)](https://doc.torli.top/)
 [![GitHub](https://img.shields.io/badge/GitHub-JamesLi--dev-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/JamesLi-dev)
-[![Focus](https://img.shields.io/badge/Focus-Frontend%20%26%20Engineering-2563eb?style=flat-square)](#skills)
+[![Focus](https://img.shields.io/badge/Focus-Frontend%20%26%20Engineering-2563eb?style=flat-square)](#技术栈)
 
 </div>
 
-## About Me
+## 关于我
 
-- Building modern web apps with a focus on maintainability and product quality.
-- Interested in frontend architecture, full stack delivery, and developer experience.
-- Writing and organizing notes at [doc.torli.top](https://doc.torli.top/).
+- 开发现代 Web 应用，关注可维护性与产品体验。
+- 专注前端架构、全栈开发和开发者体验。
+- 在 [doc.torli.top](https://doc.torli.top/) 记录和整理技术笔记。
 
-## Skills
+## 技术栈
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111827)
@@ -41,16 +41,16 @@ Building clean, reliable web applications with a focus on user experience, while
 
 <div align="center">
 
-  <!-- Visits --><img align="center" src="https://badges.pufler.dev/visits/JamesLi-dev/JamesLi-dev" />
-  <!-- Repositories --><img align="center" src="https://badges.pufler.dev/repos/JamesLi-dev" />
-  <!-- Last updated --><img align="center" src="https://badges.pufler.dev/updated/JamesLi-dev/JamesLi-dev" />
-  <!-- Created --><img align="center" src="https://badges.pufler.dev/created/JamesLi-dev/JamesLi-dev" />
-  <!-- Years on GitHub --><img align="center" src="https://badges.pufler.dev/years/JamesLi-dev" />
+  <!-- 访问人数 --><img align="center" src="https://badges.pufler.dev/visits/JamesLi-dev/JamesLi-dev" />
+  <!-- 项目数 --><img align="center" src="https://badges.pufler.dev/repos/JamesLi-dev" />
+  <!-- 更新时间 --><img align="center" src="https://badges.pufler.dev/updated/JamesLi-dev/JamesLi-dev" />
+  <!-- 创建时间 --><img align="center" src="https://badges.pufler.dev/created/JamesLi-dev/JamesLi-dev" />
+  <!-- github年份 --><img align="center" src="https://badges.pufler.dev/years/JamesLi-dev" />
 </div>
 
 --------
 
-<!-- GitHub stats -->
+<!-- github 状态 -->
 <div align="center" margin-bottom="5px">
   <a href="https://github.com/JamesLi-dev/JamesLi-dev">
     <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=JamesLi-dev" />
@@ -60,7 +60,7 @@ Building clean, reliable web applications with a focus on user experience, while
   </a>
 </div>
 
-<!-- GitHub language breakdown -->
+<!-- github 使用语言比例 -->
 <!-- <div align="center">
   <a href="https://github.com/JamesLi-dev/JamesLi-dev">
     <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JamesLi-dev&exclude_repo=JamesLi-dev&layout=compact&theme=buefy" />
@@ -71,21 +71,28 @@ Building clean, reliable web applications with a focus on user experience, while
 
 <!-- ![GitHub metrics](https://metrics.lecoq.io/JamesLi-dev)   -->
 
-#### Top Repositories
+## 代表项目
 
+### [Torli Stats](https://github.com/JamesLi-dev/torli-stats)
 
-<a href="https://github.com/JamesLi-dev/Knowledge-Map">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=JamesLi-dev&repo=Knowledge-Map&theme=buefy" />
-</a>
+轻量的 macOS 菜单栏应用，随时查看系统状态与每日活动。
+
+- **系统监控：**一览 CPU、内存、磁盘、实时网速和电池状态。
+- **每日活动：**查看打字次数、活跃时长和 WakaTime 编码时间，内置 Torli Notes 笔记。
+- **自定义展示：**自由配置菜单栏项目与仪表盘模块，支持浅色和深色外观。
+
+使用 **Swift** 构建 · 需要 **macOS 15 或更新版本**
+
+[查看源码](https://github.com/JamesLi-dev/torli-stats) · [下载应用](https://github.com/JamesLi-dev/torli-stats/releases/latest) · [使用指南](https://github.com/JamesLi-dev/torli-stats/blob/main/docs/user-guide.md)
 
 -------
 
-## Development Statistics
+## 这是我的开发统计
 
 <!--START_SECTION:waka-->
 
 ```text
-Languages: 2026-09-29 - 2026-10-29
+以下是 使用代码『 语言 』 统计 从: 2026-09-29 - 2026-10-29
 
 TypeScript   61 hrs 57 mins  █████████████████▒░░░░░░░   69.64 %
 Vue          4 hrs 39 mins   █▒░░░░░░░░░░░░░░░░░░░░░░░   05.23 %
@@ -95,14 +102,14 @@ Markdown     2 hrs 35 mins   ▓░░░░░░░░░░░░░░░░
 ```
 
 ```text
-Editors: 2026-09-29 - 2026-10-29
+以下是 使用代码『 编辑器 』 统计 从: 2026-09-29 - 2026-10-29
 
 VS Code        72 hrs 9 mins   ████████████████████▒░░░░   81.12 %
 Codex Vscode   16 hrs 47 mins  ████▓░░░░░░░░░░░░░░░░░░░░   18.88 %
 ```
 
 ```text
-Activities: 2026-09-29 - 2026-10-29
+以下是 『 时间花在了那些地方 』 统计 从: 2026-09-29 - 2026-10-29
 
 Coding          52 hrs 40 mins  ██████████████▓░░░░░░░░░░   59.21 %
 AI Coding       35 hrs 37 mins  ██████████░░░░░░░░░░░░░░░   40.05 %
@@ -112,7 +119,7 @@ Building        0 secs          ░░░░░░░░░░░░░░░░
 ```
 
 ```text
-Operating Systems: 2026-09-29 - 2026-10-29
+以下是 『 使用的电脑系统 』 统计 从: 2026-09-29 - 2026-10-29
 
 Mac   88 hrs 57 mins  █████████████████████████   100.00 %
 ```

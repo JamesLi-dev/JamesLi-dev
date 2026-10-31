@@ -613,13 +613,13 @@ def genesis() -> None:
                 'the caller workflow grants contents: write permission.'
             )
         raise
-    readme_files = [(gh_repo.get_readme(), 'zh')]
+    readme_files = [(gh_repo.get_readme(), 'en')]
     try:
-        readme_files.append((gh_repo.get_contents('README.en.md'), 'en'))
+        readme_files.append((gh_repo.get_contents('README.zh-CN.md'), 'zh'))
     except GithubException as error:
         if error.status != 404:
             raise
-        logger.info('README.en.md not found; updating the default README only')
+        logger.info('README.zh-CN.md not found; updating the default README only')
     # Fetch once so both language versions use the same statistics.
     try:
         stats = fetch_stats()

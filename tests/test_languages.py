@@ -17,9 +17,9 @@ class TestLanguages(unittest.TestCase):
                                  show_total_time=False, show_time=True, block_style='░▒▓█')
         repo = Mock()
         repo.get_readme.return_value = SimpleNamespace(
-            path='README.md', decoded_content=template.encode(), sha='zh-sha')
+            path='README.md', decoded_content=template.encode(), sha='en-sha')
         repo.get_contents.return_value = SimpleNamespace(
-            path='README.en.md', decoded_content=template.encode(), sha='en-sha')
+            path='README.zh-CN.md', decoded_content=template.encode(), sha='zh-sha')
         with patch.object(main, 'wk_i', config, create=True), \
                 patch.object(main, 'wk_c', main.WakaConstants(), create=True), \
                 patch.object(main, 'Github') as github, \
@@ -28,7 +28,10 @@ class TestLanguages(unittest.TestCase):
             main.genesis()
         fetch.assert_called_once()
         self.assertEqual(repo.update_file.call_count, 2)
-        zh, en = [call.kwargs['content'] for call in repo.update_file.call_args_list]
+        repo.get_contents.assert_called_once_with('README.zh-CN.md')
+        self.assertEqual([call.kwargs['path'] for call in repo.update_file.call_args_list],
+                         ['README.md', 'README.zh-CN.md'])
+        en, zh = [call.kwargs['content'] for call in repo.update_file.call_args_list]
         self.assertIn('使用代码『 语言 』', zh)
         self.assertNotIn('到:', zh)
         for label in ('Languages', 'Editors', 'Activities', 'Operating Systems'):
