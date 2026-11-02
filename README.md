@@ -92,7 +92,7 @@ Built with **Swift** · Requires **macOS 15 or later**
 <!--START_SECTION:waka-->
 
 ```text
-Languages: 2026-09-30 - 2026-10-30
+Languages: 2026-10-02 - 2026-11-01
 
 TypeScript   62 hrs 59 mins  █████████████████▒░░░░░░░   68.89 %
 Swift        4 hrs 42 mins   █▒░░░░░░░░░░░░░░░░░░░░░░░   05.16 %
@@ -102,14 +102,14 @@ Markdown     2 hrs 36 mins   ▓░░░░░░░░░░░░░░░░
 ```
 
 ```text
-Editors: 2026-09-30 - 2026-10-30
+Editors: 2026-10-02 - 2026-11-01
 
 VS Code        74 hrs 26 mins  ████████████████████▒░░░░   81.41 %
 Codex Vscode   16 hrs 59 mins  ████▓░░░░░░░░░░░░░░░░░░░░   18.59 %
 ```
 
 ```text
-Activities: 2026-09-30 - 2026-10-30
+Activities: 2026-10-02 - 2026-11-01
 
 Coding          53 hrs 33 mins  ██████████████▓░░░░░░░░░░   58.57 %
 AI Coding       37 hrs 13 mins  ██████████▒░░░░░░░░░░░░░░   40.71 %
@@ -119,7 +119,7 @@ Building        0 secs          ░░░░░░░░░░░░░░░░
 ```
 
 ```text
-Operating Systems: 2026-09-30 - 2026-10-30
+Operating Systems: 2026-10-02 - 2026-11-01
 
 Mac   91 hrs 25 mins  █████████████████████████   100.00 %
 ```
