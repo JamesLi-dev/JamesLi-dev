@@ -92,38 +92,38 @@ Built with **Swift** · Requires **macOS 15 or later**
 <!--START_SECTION:waka-->
 
 ```text
-Languages: 2026-10-19 - 2026-11-18
+Languages: 2026-10-20 - 2026-11-19
 
-TypeScript                 50 hrs 43 mins  █████████████░░░░░░░░░░░░   51.66 %
-Vue                        10 hrs 44 mins  ██▓░░░░░░░░░░░░░░░░░░░░░░   10.94 %
-Markdown                   8 hrs 6 mins    ██░░░░░░░░░░░░░░░░░░░░░░░   08.25 %
-Swift                      6 hrs 53 mins   █▓░░░░░░░░░░░░░░░░░░░░░░░   07.01 %
-JSON                       2 hrs 11 mins   ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.22 %
+TypeScript                 49 hrs 19 mins  █████████████░░░░░░░░░░░░   51.39 %
+Vue                        10 hrs 48 mins  ██▓░░░░░░░░░░░░░░░░░░░░░░   11.26 %
+Markdown                   7 hrs 48 mins   ██░░░░░░░░░░░░░░░░░░░░░░░   08.14 %
+Swift                      6 hrs 36 mins   █▓░░░░░░░░░░░░░░░░░░░░░░░   06.88 %
+JSON                       2 hrs 13 mins   ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.32 %
 ```
 
 ```text
-Editors: 2026-10-19 - 2026-11-18
+Editors: 2026-10-20 - 2026-11-19
 
-VS Code               80 hrs 43 mins  ████████████████████▓░░░░   82.23 %
-Codex Vscode          15 hrs 16 mins  ████░░░░░░░░░░░░░░░░░░░░░   15.56 %
-OMP                   1 hr 53 mins    ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.93 %
+VS Code               79 hrs 24 mins  ████████████████████▓░░░░   82.73 %
+Codex Vscode          14 hrs 24 mins  ███▓░░░░░░░░░░░░░░░░░░░░░   15.01 %
+OMP                   1 hr 53 mins    ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.98 %
 Antigravity Desktop   16 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.28 %
 ```
 
 ```text
-Activities: 2026-10-19 - 2026-11-18
+Activities: 2026-10-20 - 2026-11-19
 
-AI Coding       56 hrs 32 mins  ██████████████▒░░░░░░░░░░   57.59 %
-Coding          39 hrs 49 mins  ██████████░░░░░░░░░░░░░░░   40.56 %
-Writing Docs    1 hr 40 mins    ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.70 %
-Writing Tests   7 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.12 %
+AI Coding       53 hrs 38 mins  ██████████████░░░░░░░░░░░   55.89 %
+Coding          40 hrs 32 mins  ██████████▓░░░░░░░░░░░░░░   42.23 %
+Writing Docs    1 hr 40 mins    ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.74 %
+Writing Tests   6 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.11 %
 Building        1 min           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.03 %
 ```
 
 ```text
-Operating Systems: 2026-10-19 - 2026-11-18
+Operating Systems: 2026-10-20 - 2026-11-19
 
-Mac   98 hrs 10 mins  █████████████████████████   100.00 %
+Mac   95 hrs 59 mins  █████████████████████████   100.00 %
 ```
 
 <!--END_SECTION:waka-->
