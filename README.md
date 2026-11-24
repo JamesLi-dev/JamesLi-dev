@@ -92,38 +92,38 @@ Built with **Swift** · Requires **macOS 15 or later**
 <!--START_SECTION:waka-->
 
 ```text
-Languages: 2026-10-23 - 2026-11-22
+Languages: 2026-10-24 - 2026-11-23
 
-TypeScript                 46 hrs 58 mins  █████████████▓░░░░░░░░░░░   54.39 %
-Vue                        10 hrs 48 mins  ███░░░░░░░░░░░░░░░░░░░░░░   12.51 %
-Markdown                   5 hrs 42 mins   █▓░░░░░░░░░░░░░░░░░░░░░░░   06.61 %
-Swift                      4 hrs 31 mins   █▒░░░░░░░░░░░░░░░░░░░░░░░   05.23 %
-CSS                        1 hr 35 mins    ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.83 %
+TypeScript                 48 hrs 31 mins  █████████████▓░░░░░░░░░░░   54.35 %
+Vue                        11 hrs 25 mins  ███▒░░░░░░░░░░░░░░░░░░░░░   12.80 %
+Markdown                   6 hrs 1 min     █▓░░░░░░░░░░░░░░░░░░░░░░░   06.76 %
+Swift                      4 hrs 36 mins   █▒░░░░░░░░░░░░░░░░░░░░░░░   05.15 %
+CSS                        1 hr 35 mins    ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.77 %
 ```
 
 ```text
-Editors: 2026-10-23 - 2026-11-22
+Editors: 2026-10-24 - 2026-11-23
 
-VS Code               72 hrs 3 mins   █████████████████████░░░░   83.44 %
-Codex Vscode          11 hrs 53 mins  ███▒░░░░░░░░░░░░░░░░░░░░░   13.76 %
-OMP                   2 hrs 8 mins    ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.49 %
-Antigravity Desktop   16 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.31 %
+VS Code               74 hrs 26 mins  █████████████████████░░░░   83.38 %
+Codex Vscode          11 hrs 55 mins  ███▒░░░░░░░░░░░░░░░░░░░░░   13.36 %
+OMP                   2 hrs 28 mins   ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.77 %
+Antigravity Desktop   26 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.49 %
 ```
 
 ```text
-Activities: 2026-10-23 - 2026-11-22
+Activities: 2026-10-24 - 2026-11-23
 
-AI Coding       47 hrs 46 mins  █████████████▓░░░░░░░░░░░   55.32 %
-Coding          37 hrs 27 mins  ███████████░░░░░░░░░░░░░░   43.37 %
-Writing Docs    1 hr 2 mins     ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.20 %
-Writing Tests   3 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.08 %
+AI Coding       49 hrs 6 mins   █████████████▓░░░░░░░░░░░   55.00 %
+Coding          38 hrs 44 mins  ███████████░░░░░░░░░░░░░░   43.38 %
+Writing Docs    1 hr 20 mins    ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.51 %
+Writing Tests   3 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.07 %
 Building        1 min           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.03 %
 ```
 
 ```text
-Operating Systems: 2026-10-23 - 2026-11-22
+Operating Systems: 2026-10-24 - 2026-11-23
 
-Mac   86 hrs 21 mins  █████████████████████████   100.00 %
+Mac   89 hrs 17 mins  █████████████████████████   100.00 %
 ```
 
 <!--END_SECTION:waka-->
